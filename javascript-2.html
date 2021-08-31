@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            #black, .bra{
+            
+                width: 500px;
+                border: 1px solid black;
+                
+                }
+
+            #black {
+
+                border-spacing: 0 18px;
+                background-color: black;
+                color: #fff;
+            }
+
+           .bra{
+               color: black;
+               background-color: #fff;
+           }
+
+            .floresta{
+                
+
+                background-color:rgb(3, 102, 79);
+
+            }
+
+            .verdeT{
+
+                background-color: #19563e;
+
+            }
+
+            .esmeralda{
+                background-color: rgb(31, 86, 76);
+            }
+
+            .floresta, .verdeT,.esmeralda{
+                color: #fff;
+            }
+
+            button{
+                background-color: orange;
+             
+                height: 50px;
+                
+            }
+
+            
+    </style>
+
+        <script>
+
+        function themeDark() {
+            document.getElementById("black").style.backgroundColor = "#000"
+            document.getElementById("black").style.color = "#fff"
+            document.getElementByClassName("text").innerHTML = "Preto"
+           }
+
+           
+
+        function themeLight(){
+            document.getElementById("black").style.backgroundColor = "#fff"
+            document.getElementById("black").style.color = "#000"
+            let a = document.getElementsByClassName("text")
+            a.innerHTML = 'Branco'
+            
+
+        }
+    </script>
+
+    </head>
+    <body>
+        <header>
+           <button onclick="themeDark()">Tema Dark</button>
+           <button onclick="themeLight()">Tema Light</button>
+           
+
+          
+            
+
+            <h1>Catálogo de Cores</h1>
+            </header>
+        <main>
+
+            
+
+                
+            <h2>Testes com o fundo <span class="text"></span></h2>
+            <table id="black">
+                <thead>
+                    <tr>
+                        <th>Nome da cor</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Floresta Amazônica</td>
+                        <td class="floresta">RGB: 3, 102, 79</td>
+                    </tr>
+                    <tr>
+                        <td>Verde Trevo</td>
+                        <td class="verdeT">hex: #19563e</td>
+                    </tr>
+                    <tr>
+                        <td>Esmeralda Intensa</td>
+                        <td class="esmeralda"> RGB: 31, 86, 76</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+</body>
+</html>
