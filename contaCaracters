@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function Contar(){
+            let text = document.getElementById('texto').value
+            text=text.length
+
+            document.getElementById("resultado").innerHTML= text
+            console.log(text)
+            return(text)
+        }
+
+        
+        
+    </script>
+
+    <style>
+        .container{
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+            text-align: center;
+            
+
+     
+        color: black;
+           
+        }
+        .quadro{
+            width: inherit;
+            height: 250px;
+        }
+
+        
+        
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+    <p>CONTE OS CARACTERES</p><textarea class="quadro" id="texto" placeholder="Insira o texto"></textarea>
+    <button type= "text" onclick="Contar()"> Contar </button>
+    <p id="resultado"></p> ´
+
+    
+    
+
+</div>
+    
+</body>
+</html>
