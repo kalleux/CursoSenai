@@ -50,7 +50,7 @@
 
     <p>CONTE OS CARACTERES</p><textarea class="quadro" id="texto" placeholder="Insira o texto"></textarea>
     <button type= "text" onclick="Contar()"> Contar </button>
-    <p id="resultado"></p> ´
+    <p id="resultado"></p> 
 
     
     
